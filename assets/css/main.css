@@ -14,6 +14,8 @@
   --dark: rgb(37, 40, 42);
   /* RAL 6001 */
   --green: rgb(92, 129, 68);
+  /* RAL 3003 */
+  --red: rgb(124, 13, 36);
 }
 
 body {
@@ -51,6 +53,14 @@ p {
   text-align: justify;
   hyphens: auto;
   font-size: 1.3rem;
+}
+
+main>p:first-of-type:first-letter {
+  color: var(--red);
+  float: left;
+  font-size: 5.2rem;
+  line-height: 3;
+  padding-right: .5rem;
 }
 
 figure {
