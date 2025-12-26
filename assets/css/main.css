@@ -1,0 +1,103 @@
+:root {
+  /* this has to be set to switch between light or dark */
+  color-scheme: light dark;
+
+  /* The following colors are from
+  https://www.ral-farben.de/alle-ral-farben
+  */
+
+  /* RAL 9010 */
+  --light: rgb(239, 238, 229);
+  /* --light: rgb(241, 238, 226); */
+  /* --light: rgb(239, 240, 235); */
+  /* RAL9011 */
+  --dark: rgb(37, 40, 42);
+  /* RAL 6001 */
+  --green: rgb(92, 129, 68);
+}
+
+body {
+  font-family: sans-serif;
+  line-height: 1.5;
+  background-color: light-dark(var(--light), var(--dark));
+  color: light-dark(var(--dark), var(--light));
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 1em;
+}
+
+main {
+  max-width: 768px;
+}
+
+header {
+  /* border-bottom: 2px solid light-dark(var(--dark), var(--light)); */
+  margin-bottom: 1rem;
+}
+
+footer {
+  border-top: 1px solid #222;
+  margin-top: 1rem;
+}
+
+a {
+  color: var(--green);
+  text-decoration: none;
+}
+
+p {
+  font-family: "Libertinus Serif", "Times New Roman", serif;
+  line-height: 1.5;
+  text-align: justify;
+  hyphens: auto;
+  font-size: 1.3rem;
+}
+
+figure {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+figure img {
+  max-width: 100%;
+  filter: drop-shadow(1px 2px 8px var(--dark));
+}
+
+figure figcaption h4 {
+  text-align: center;
+}
+
+/* figure figcaption p { */
+/* text-align: center; */
+/* font-style: italic; */
+/* } */
+
+dl dt {
+  font-weight: bold;
+}
+
+pre {
+  color: var(--light);
+  background-color: rgba(64, 64, 64, 0.5);
+  padding: 0.2rem;
+  border-radius: 2px;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  margin-right: 10px;
+  /* optional, adds some spacing between list items */
+  display: inline-flex;
+}
+
+nav li::before {
+  content: "./";
+  color: var(--green);
+}
