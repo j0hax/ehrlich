@@ -83,12 +83,9 @@ pre {
   color: var(--light);
   background-color: rgba(64, 64, 64, 0.5);
   padding: 0.5rem;
-  border-radius: 2%;
-
-  /* Show scroll bars when too narrow */
-  /* word-wrap: normal; */
+  border-radius: 0.5rem;
   overflow-x: auto;
-  /* white-space: pre; */
+  font-size: 1rem;
 }
 
 nav ul {
