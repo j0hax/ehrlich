@@ -23,11 +23,13 @@ body {
   color: light-dark(var(--dark), var(--light));
   display: flex;
   flex-direction: column;
+  flex-wrap: wrap;
   align-items: center;
-  margin: 0 1em;
+  padding: 0 1em;
 }
 
-main {
+body>* {
+  width: 100%;
   max-width: 768px;
 }
 
@@ -59,6 +61,7 @@ figure {
   align-items: center;
 }
 
+
 figure img {
   max-width: 100%;
   filter: drop-shadow(1px 2px 8px var(--dark));
@@ -68,10 +71,9 @@ figure figcaption h4 {
   text-align: center;
 }
 
-/* figure figcaption p { */
-/* text-align: center; */
-/* font-style: italic; */
-/* } */
+figure figcaption p {
+  font-style: italic;
+}
 
 dl dt {
   font-weight: bold;
@@ -80,8 +82,13 @@ dl dt {
 pre {
   color: var(--light);
   background-color: rgba(64, 64, 64, 0.5);
-  padding: 0.2rem;
-  border-radius: 2px;
+  padding: 0.5rem;
+  border-radius: 2%;
+
+  /* Show scroll bars when too narrow */
+  /* word-wrap: normal; */
+  overflow-x: auto;
+  /* white-space: pre; */
 }
 
 nav ul {
