@@ -1,8 +1,10 @@
 <p>
+<small>
 {{ if .Site.Copyright }}
 {{ .Site.Copyright | markdownify }}
 {{ else }}
 Copyright {{ now.Year }}. All rights reserved.
 {{ end }}
+</small>
 </p>
 
