@@ -115,11 +115,22 @@ footer ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
+  display: flex;
+  justify-content: center;
 }
 
 nav ul li,
 footer ul li {
-  margin-right: 10px;
+  /* margin-right: 1rem; */
   /* optional, adds some spacing between list items */
   display: inline-flex;
+}
+
+header h1 {
+  text-align: center;
+}
+
+nav ul li a,
+footer ul li a {
+  padding: 0.5rem;
 }
