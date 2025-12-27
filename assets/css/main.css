@@ -56,6 +56,11 @@ a:hover {
   /* font-weight: bold; */
 }
 
+[aria-current]:not([aria-current="false"]) {
+  color: var(--light);
+  background-color: var(--green);
+}
+
 ::selection {
   color: var(--light);
   background-color: var(--green);
@@ -102,19 +107,16 @@ pre {
   font-size: 1rem;
 }
 
-nav ul {
+nav ul,
+footer ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
 }
 
-nav ul li {
+nav ul li,
+footer ul li {
   margin-right: 10px;
   /* optional, adds some spacing between list items */
   display: inline-flex;
-}
-
-nav li::before {
-  content: "./";
-  color: var(--green);
 }
