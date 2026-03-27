@@ -139,6 +139,6 @@ footer ul li a {
 }
 
 blockquote {
-  border-left: 0.5rem var(--green) solid;
+  border-left: calc(1rem / 3) var(--green) solid;
   padding-left: .5rem;
 }
