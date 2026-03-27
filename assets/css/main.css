@@ -75,6 +75,7 @@ dd {
   text-align: justify;
   hyphens: auto;
   font-size: 1.3rem;
+  font-variant-ligatures: common-ligatures discretionary-ligatures no-historical-ligatures contextual;
 }
 
 figure {
@@ -129,9 +130,15 @@ footer ul li {
 
 header h1 {
   text-align: center;
+  font-variant: small-caps;
 }
 
 nav ul li a,
 footer ul li a {
   padding: 0.5rem;
+}
+
+blockquote {
+  border-left: 0.5rem var(--green) solid;
+  padding-left: .5rem;
 }
