@@ -73,6 +73,7 @@ dd {
   font-family: "Libertinus Serif", "Times New Roman", serif;
   line-height: 1.5;
   text-align: justify;
+  word-break: auto-phrase;
   hyphens: auto;
   font-size: 1.1rem;
   font-variant-ligatures: common-ligatures discretionary-ligatures no-historical-ligatures contextual;
