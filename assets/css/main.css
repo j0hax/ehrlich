@@ -104,6 +104,10 @@ dl dt {
   font-weight: bold;
 }
 
+dl * {
+  text-align: start;
+}
+
 pre {
   color: var(--light);
   background-color: rgba(64, 64, 64, 0.5);
@@ -143,4 +147,5 @@ footer ul li a {
 blockquote {
   border-left: calc(1rem / 3) var(--green) solid;
   padding-left: .5rem;
+  text-align: start;
 }
