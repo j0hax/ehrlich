@@ -18,7 +18,6 @@
 
 body {
   font-family: sans-serif;
-  line-height: 1.5;
   background-color: light-dark(var(--light), var(--dark));
   color: light-dark(var(--dark), var(--light));
   display: flex;
@@ -76,7 +75,7 @@ dd {
   /* word-break: auto-phrase; */
   word-break: break-word;
   hyphens: auto;
-  font-size: 1.1rem;
+  font-size: 1.2rem;
   font-variant-ligatures: common-ligatures discretionary-ligatures no-historical-ligatures contextual;
 }
 
